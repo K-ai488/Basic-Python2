@@ -1,8 +1,6 @@
 a,b,c = map(int, input().split())
-if a>b:
-    a, b= b, a
-if a>c:
-    a, c= c, a
-if b>c:
-    b, c= c, b
-print(a,b,c)
+l = [a,b,c]
+l = sorted(l)
+l=[str(i) for i in l]
+l=" ".join(l)         #リストの内容だけを取り出す操作
+print(l)
